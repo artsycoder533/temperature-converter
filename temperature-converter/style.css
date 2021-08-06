@@ -8,18 +8,66 @@ body {
     height: 100vh;
     display: grid;
     place-items: center;
+    background: black;
+    color: white;
 }
 
 .container {
-    border: 2px solid black;
+    border: 2px solid white;
     width: 400px;
-    height: 200px;
+    height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    padding: 2rem;
+    border-top: 2px solid red;
+}
+
+/* animation */
+@keyframes spinner {
+    0% {
+        border-top
+    }
+}
+
+.form {
+    padding: 1rem;
+    text-align: center;
+}
+
+#temp {
+    padding: 0.35rem;
+    border-radius: 20px;
+    border: none;
+    width: 100px;
+    text-align: center;
+    
 }
 
 .btn {
-    d
+    padding: 0.5rem;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    border-radius: 20px;
+    text-transform: uppercase;
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: red;
+}
+
+.result {
+    width: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: bold;
+}
+
+#result {
+    color: red
 }

@@ -11,16 +11,19 @@
 <body>
     <div class="container">
         <h1>Temperature Convertor</h1>
-        <form>
+        <form class="form">
             <label for="temp">Enter temperature:</label>
-            <input type="number" name="temp" id="temp">
+            <input type="text" name="temp" id="temp">
             <br>
-            <button class="celcuis btn">Celcius</button>
-            <button class="fahrenheit btn">Fahrenheit</button>
+            <button class="btn" id="celcius">To Celcius</button>
+            <button class="btn" id="fahrenheit">To Fahrenheit</button>
         </form>
         
         <br>
-        <h2 class="result">Result: </h2>
+        <div class="result">
+            <h3 class>Result: </h3>
+            <p id="result">5</p>
+        </div>
     </div>
 </body>
 </html>
