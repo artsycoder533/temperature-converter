@@ -21,13 +21,23 @@ body {
     justify-content: space-around;
     align-items: center;
     padding: 2rem;
-    border-top: 2px solid red;
+    animation: spinner 0.5s infinite;
+    transition: all 0.5s linear;
 }
 
 /* animation */
 @keyframes spinner {
     0% {
-        border-top
+        border-top: 2px solid red;
+    }
+    25% {
+        border-right: 2px solid blue;
+    }
+    50% {
+        border-bottom: 2px solid orange;
+    }
+    75% {
+        border-left: 2px solid green;
     }
 }
 
@@ -69,5 +79,5 @@ body {
 }
 
 #result {
-    color: red
+    color: red;
 }
