@@ -4,12 +4,14 @@ const fahrenheitBtn = document.getElementById('fahrenheit');
 const convert = document.getElementById('convert');
 const result = document.getElementById('result');
 
-celciusBtn.addEventListener('click', toCelcius(userInput.value));
+convert.addEventListener('click', toCelcius(77));
 // fahrenheitBtn.addEventListener('click', toFahrenheit(userInput));
 
 function toCelcius(temp) {
-    return (5 / 9) * (temp - 32);
+    let convertedTemp = (5 / 9) * (temp - 32);
+    result.innerHTML = convertedTemp;
+    return convertedTemp;
 }
 
-result.innerHTML = toCelcius(userInput.value);
+
 
