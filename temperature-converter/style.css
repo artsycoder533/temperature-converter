@@ -28,9 +28,9 @@ body {
 /* animation */
 @keyframes spinner {
     0% {
-        border-top: 2px solid red;
+        transform: rotate
     }
-    25% {
+    /* 25% {
         border-right: 2px solid blue;
     }
     50% {
@@ -38,7 +38,7 @@ body {
     }
     75% {
         border-left: 2px solid green;
-    }
+    } */
 }
 
 .form {
@@ -47,7 +47,6 @@ body {
 }
 
 h4 {
-    color: red;
     margin-bottom: 0.5rem;
 }
 
