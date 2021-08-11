@@ -1,6 +1,7 @@
 const userInput = document.querySelector(".textbox");
 const convertBtn = document.querySelector('#convert');
 const result = document.querySelector('#result');
+const reset = document.querySelector("#reset");
 const radioBtns = document.querySelectorAll('input[name="unit"]');
 let input;
 
@@ -40,3 +41,8 @@ function toFahrenheit(temp) {
     result.textContent = convertedTemp;
     return convertedTemp;
 }
+
+// add event listener for reset button
+reset.addEventListener = ('click', function () {
+    userInput.textContent = "";
+});
