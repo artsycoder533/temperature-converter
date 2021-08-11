@@ -21,7 +21,7 @@ body {
     justify-content: space-around;
     align-items: center;
     padding: 2rem;
-    /* animation: spinner 0.5s infinite; */
+    animation: spinner 0.5s infinite;
     transition: all 0.5s linear;
 }
 
@@ -83,10 +83,12 @@ h4 {
 .result {
     width: 150px;
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
     font-weight: bold;
 }
+
 
 #result {
     color: red;

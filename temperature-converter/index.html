@@ -13,21 +13,21 @@
         <h1>Temperature Converter</h1>
         <form class="form">
             <label for="temp">Enter temperature:</label>
-            <input type="number" name="temp" id="temp" class="textbox">
+            <input type="number" name="temp" id="temp" class="textbox" autofocus tabindex="1">
             <br>
             <h4>Enter current temperature unit:</h4>
             <label for="celcius">Celcius</label>
-            <input type="radio" name="unit" value="celcius" id="celcius">
+            <input type="radio" name="unit" value="celcius" id="celcius" tabindex="2">
             <label for="fahrenheit">Fahrenheit</label>
-            <input type="radio" name="unit" value="fahrenheit" id="fahrenheit">
+            <input type="radio" name="unit" value="fahrenheit" id="fahrenheit" tabindex="3">
             <br>
-            <button class="btn" id="convert">convert</button>
-            <button class="btn" id="reset">reset</button>
+            <button class="btn" id="convert" tabindex="4">convert</button>
+            <button class="btn" id="reset" tabindex="5">reset</button>
         </form>
         
         <br>
         <div class="result">
-            <h3 class>Result: </h3>
+            <h3>Result: </h3>
             <p id="result"></p>
         </div>
     </div>
